@@ -28,7 +28,7 @@ body {
   display: flex;
 }
 
-.card-image img {
+.card-image img{
   width: 350px;
   border-radius: 10px 0 0 10px;
 }
@@ -43,7 +43,7 @@ body {
 .card-name {
   letter-spacing: 5px;
   text-transform: uppercase;
-  opacity: 0.5;
+  color: var(--darkGrayishBlue);
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -57,8 +57,8 @@ body {
 .card-description {
   width: 70%;
   margin-left: 20px;
-  opacity: 0.7;
   height: 20%;
+  color: var(--darkGrayishBlue);
   display: flex;
   align-items: center;
   line-height: 1.7;
@@ -106,6 +106,7 @@ body {
 
 .cart-button button:hover {
   cursor: pointer;
+  background: var(--veryDarkBlue);
 }
 
 .cart-button button:active {
