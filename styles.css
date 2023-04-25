@@ -1,11 +1,113 @@
 :root {
-    --darkCyan: hsl(158, 36%, 37%);
-    --cream: hsl(30, 38%, 92%);
-    --veryDarkBlue: hsl(212, 21%, 14%);
-    --darkGrayishBlue: hsl(228, 12%, 48%);
-    --white: hsl(0, 0%, 100%);
+  --fontBase: "Montserrat", sans-serif;
+  --headline: "Fraunces", serif;
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--cream);
+  font-size: 14px;
+  font-family: var(--fontBase);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+}
+
+.card-image img {
+  width: 350px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-information {
+  background: var(--white);
+  border-radius: 0 10px 10px 0;
+  width: 350px;
+  height: 525px;
+}
+
+.card-name {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.card-information h1 {
+  font-family: var(--headline);
+  width: 60%;
+  margin-left: 20px;
+}
+
+.card-description {
+  width: 70%;
+  margin-left: 20px;
+  opacity: 0.7;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.card-prices {
+  display: flex;
+  align-items: center;
+}
+
+.new-price {
+  color: var(--darkCyan);
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: var(--headline);
+}
+
+.old-price {
+  opacity: 0.5;
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+.cart-button {
+  text-align: center;
+}
+
+.cart-button img {
+  position: relative;
+  right: 10px;
+  top: 2px;
+}
+
+.cart-button button {
+  background: var(--darkCyan);
+  color: var(--white);
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.cart-button button:hover {
+  cursor: pointer;
+}
+
+.cart-button button:active {
+  transform: scale(0.9);
 }
